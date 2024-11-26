@@ -1,0 +1,5 @@
+.body-content{
+  background-color: var(--Dark-Mode);
+  height: 100vh;
+  width: 100vw;
+}
