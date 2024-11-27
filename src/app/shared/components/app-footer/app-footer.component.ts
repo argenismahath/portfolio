@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { Clipboard } from '@angular/cdk/clipboard';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 @Component({
   selector: 'app-app-footer',
@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './app-footer.component.css',
 })
 export class AppFooterComponent {
-  // constructor(private clipboard: Clipboard) {}
+  constructor(private clipboard: Clipboard) {}
 
-  // copyToClipboard() {
-  //   const email = 'oleidergonzalez11mx@gmail.com';
-  //   this.clipboard.copy(email);
-  // }
+  copyToClipboard() {
+    const email = 'oleidergonzalez11mx@gmail.com';
+    this.clipboard.copy(email);
+  }
 
 }
