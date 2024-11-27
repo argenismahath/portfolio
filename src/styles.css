@@ -8,3 +8,7 @@
   --light-Content: #A7A7A7;
   --Solid-Heading-Dark-mode: #CCCCCC;
 }
+
+html {
+  scroll-behavior: smooth;
+}

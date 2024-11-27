@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Clipboard } from '@angular/cdk/clipboard';
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-app-footer',
@@ -9,9 +10,20 @@ import { Clipboard } from '@angular/cdk/clipboard';
 export class AppFooterComponent {
   constructor(private clipboard: Clipboard) {}
 
-  copyToClipboard() {
-    const email = 'oleidergonzalez11mx@gmail.com';
-    this.clipboard.copy(email);
+  readonly mail: string = environment.mail;
+  readonly githubUrl: string = environment.githubUrl;
+  readonly linkedinUrl: string = environment.linkedinUrl;
+
+  copied = false;
+
+  copyToClipboard(): void {
+    this.clipboard.copy(this.mail);
+    this.copied = true;
+
+    // Ocultar el mensaje después de 2 segundos
+    setTimeout(() => {
+      this.copied = false;
+    }, 10000);
   }
 
 }
