@@ -5,6 +5,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
+import { ProjectCardComponent } from './projects/ProjectCard/ProjectCard.component';
+// import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -12,17 +14,18 @@ import { AppFooterComponent } from './app-footer/app-footer.component';
     AboutMeComponent,
     SkillsComponent,
     ProjectsComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    ProjectCardComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     HeaderComponent,
     AboutMeComponent,
     SkillsComponent,
     ProjectsComponent,
-    AppFooterComponent
+    AppFooterComponent,
   ]
 })
 export class SharedComponentsModule {}

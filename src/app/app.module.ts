@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedComponentsModule } from './shared/components/shared-components.module';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { SharedComponentsModule } from './shared/components/shared-components.mo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    ClipboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
